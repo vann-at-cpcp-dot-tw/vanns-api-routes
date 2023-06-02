@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WP API Routes
+ * Plugin Name: Vann's API Routes
  * Description:
  */
 
