@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: My API Routes
+ * Plugin Name: WP API Routes
  * Description:
  */
 
