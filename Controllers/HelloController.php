@@ -1,5 +1,5 @@
 <?php
-namespace MyAPIRoutes\Controllers;
+namespace WPAPIRoutes\Controllers;
 
 use WP_REST_Response;
 

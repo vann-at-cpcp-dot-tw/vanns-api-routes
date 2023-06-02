@@ -1,6 +1,6 @@
 <?php
 spl_autoload_register(function($className){
-  $namespace = 'MyAPIRoutes\\';
+  $namespace = 'WPAPIRoutes\\';
 
   if (strpos($className, $namespace) === 0) {
     $className = str_replace($namespace, '', $className);

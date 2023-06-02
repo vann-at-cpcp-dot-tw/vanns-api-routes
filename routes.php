@@ -1,8 +1,8 @@
 <?php
 require_once dirname(__FILE__) . '/autoload.php';
 
-use MyAPIRoutes\Controllers\HelloController;
-use MyAPIRoutes\Controllers\PostsController;
+use WPAPIRoutes\Controllers\HelloController;
+use WPAPIRoutes\Controllers\PostsController;
 
 add_action('rest_api_init', function(){
 
