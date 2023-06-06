@@ -2,12 +2,12 @@
 require_once dirname(__FILE__) . '/autoload.php';
 
 use WPAPIRoutes\Controllers\HelloController;
-use WPAPIRoutes\Controllers\PostsController;
+use WPAPIRoutes\Controllers\PostController;
 
 add_action('rest_api_init', function(){
 
   $helloController = new HelloController();
-  $postsController = new PostsController();
+  $postController = new PostController();
 
   register_rest_route('api/v1', '/hello/(?P<requestWorld>\w+)', [
     'methods' => 'GET',
@@ -17,7 +17,7 @@ add_action('rest_api_init', function(){
 
   register_rest_route('api/v1', '/posts', [
     'methods' => 'GET',
-    'callback' => [$postsController, 'getPosts'],
+    'callback' => [$postController, 'getPosts'],
     'permission_callback' => '__return_true',
   ]);
 

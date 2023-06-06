@@ -4,14 +4,13 @@ namespace WPAPIRoutes\Controllers;
 use WP_Query;
 use WP_REST_Response;
 
-class PostsController {
+class PostController {
   public function __construct() {
       // 在這裡可以初始化控制器
   }
 
   public function getPosts( $request ) {
     $query = $request->get_query_params();
-    $data = $query;
 
     $args = [
       'post_type' => 'post',
@@ -34,10 +33,6 @@ class PostsController {
             // 其他你需要的資料
         ];
     }
-
-    $data = [
-      'list'=> $requestList,
-    ];
 
     $response = new WP_REST_Response([
       'message' => 'OK',
