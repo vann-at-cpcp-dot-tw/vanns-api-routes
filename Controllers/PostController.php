@@ -6,7 +6,7 @@ use WP_REST_Response;
 
 class PostController {
   public function __construct() {
-      // 在這裡可以初始化控制器
+    // 在這裡可以初始化控制器
   }
 
   public function getAll($request){
