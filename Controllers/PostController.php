@@ -9,7 +9,7 @@ class PostController {
       // 在這裡可以初始化控制器
   }
 
-  public function getPosts( $request ) {
+  public function getAll($request){
     $query = $request->get_query_params();
 
     $args = [

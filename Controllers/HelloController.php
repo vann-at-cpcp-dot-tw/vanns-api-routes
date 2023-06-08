@@ -8,7 +8,7 @@ class HelloController {
       // 在這裡可以初始化控制器
   }
 
-  public function helloWorld( $request ) {
+  public function helloWorld($request){
 
       $requestWorld = $request->get_param('requestWorld');
       $query = $request->get_query_params();
