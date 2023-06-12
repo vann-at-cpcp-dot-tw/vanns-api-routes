@@ -8,16 +8,20 @@ class HelloController {
     // 在這裡可以初始化控制器
   }
 
-  public function helloWorld($request){
+
+  public function helloWorld( $request ) {
 
     $requestWorld = $request->get_param('requestWorld');
     $query = $request->get_query_params();
 
     // 在這裡處理請求，執行相應的操作
-    $data = [
+    $response = new WP_REST_Response([
+      'message' => 'OK',
+      'data'=> [
         'message' => 'Hello, ' . $requestWorld . '!'
-    ];
+      ]
+    ], 200);
 
-    return rest_ensure_response($data);
+    return $response;
   }
 }
