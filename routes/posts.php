@@ -1,5 +1,6 @@
 <?php
-$postController = new WPAPIRoutes\Controllers\PostController();
+$postModel = new WPAPIRoutes\Models\PostModel();
+$postController = new WPAPIRoutes\Controllers\PostController($postModel);
 
 register_rest_route('api/v1', '/posts', [
   'methods' => 'GET',
